@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(150, 150, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+  background-color: #f3f3f3;
+  padding: 3rem;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #505050;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #505050;
+  background-color: #fff;
+  padding: 1rem 5rem;
+  border-radius: 5px;
+}
+
+h3 {
+  color: rgb(99, 99, 172);
+  font-size: 1.725rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+p {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  height: 30px;
+}
+
+label {
+  width: 70px;
+  text-align: right;
+  color: #505050;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.campo {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(150, 150, 200, 0.26);
+  color: #202020;
+  font-weight: 600;
+  outline: none;
+  transition: background-color 0.5s ease;
+}
+
+.campo::placeholder {
+  color: #555;
+}
+
+.campo:focus {
+  background-color: #fff;
+  border: 2px solid rgb(150, 150, 200);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: rgb(99, 99, 172);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+}
+
+.reset {
+  background-color: #f3f3f3;
+  color: rgb(99, 99, 172);
+  border: 2px solid rgb(99, 99, 172);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.resposta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+
+  font-size: 1.6rem;
+  color: rgb(99, 99, 172);
+}
+
+.red {
+  color: rgb(177, 59, 59);
+}
+
+.green {
+  color: rgb(90, 158, 90);
+}
